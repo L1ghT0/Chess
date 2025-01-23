@@ -63,3 +63,17 @@ function swipeParticipants(e){
         timerId = setTimeout(() => swipeParticipants(pretendEvent), 5000)
     }
 }
+
+window.addEventListener('resize', (e) => {
+    if (window.innerWidth <= 770) { 
+        currentStage = 1;
+    } else {
+        currentStage = 3;
+    }
+    virtualStages = currentStage
+
+    paginationCurrentStageMobile.innerHTML = currentStage
+    paginationCurrentStagePC.innerHTML = currentStage
+
+    participantsList.style.transform = `translateX(${-(offsetX*100)}%)`
+})
