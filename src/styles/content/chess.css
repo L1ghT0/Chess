@@ -1,0 +1,242 @@
+/* Mobile */
+.chess{
+    margin-top: 48px;
+}
+
+.supportTournament{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.supportTournament_image{
+    background-image: url('../../assets/images/supportTournament.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 212.56px;
+    max-width: 335px;
+    width: 100%;
+    align-self: center;
+}
+
+.tournament{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* image settings - Start*/
+/* Probably I should move this somewhere else */
+.tournament_Image{
+    position: relative; 
+    min-width: 335px; 
+    width: 335px;
+    height: 402px; 
+    background-color: #FFF;
+    margin: 0 auto;
+    zoom: 78%;
+}
+
+.tournament_Image__hand {
+    position: absolute;
+    top: 254px;
+    left: 138px;
+    z-index: 6; 
+}
+.tournament_Image__stampPaper{
+    position: absolute;
+    top: 48px;
+    left: 15px;
+    z-index: 1;
+}  
+.tournament_Image__money{
+    position: absolute;
+    top: 36px;
+    left: 249px;
+    z-index: 2;
+}
+.tournament_Image__vectorBig{
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    z-index: 3;
+}
+.tournament_Image__ManPlayingChess{
+    position: absolute;
+    top: 82px;
+    left: 53px;
+    z-index: 4;
+}
+.tournament_Image__vectorSmall{
+    position: absolute;
+    top: 230px;
+    left: -10px;
+    z-index: 5;
+}
+.tournament_Image__chessFigureBlack{
+    position: absolute;
+    top: 270px;
+    left: 44px;
+    z-index: 6;
+}
+
+.tournament_Image_overlay {
+    background-image: url('../../assets/images/tournament/background.png'); 
+}
+/* image settings - End */
+
+.tournamentInfo{
+    margin-top: 25px;
+}
+
+.tournamentInfo_title{
+    font-family: 'Merriweather400';
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #313131;
+}
+
+.tournamentInfo_detailsList{
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.tournamentInfo_detailsList_element{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #D0D0D0;
+}
+.tournamentInfo_detailsList_element:last-child{
+    border: 0;
+    padding-bottom: 0;
+}
+.tournamentInfo_detailsList_title{
+    font-family: 'Golos400';
+    font-size: 20px;
+    line-height: 24px;
+    color: #313131;
+    opacity: 0.7;
+}
+.tournamentInfo_detailsList_sub{
+    font-family: 'Golos600';
+    font-size: 20px;
+    line-height: 24px;
+    color: #313131;
+}
+.oldPrice{
+    font-size: 20px;
+    line-height: 24px;
+    color: #313131;
+    text-decoration: line-through 2px #F54932;
+    padding-right: 7px;
+}
+.tournamentInfo_links{
+    margin-top: 40px;
+}
+@media screen and (min-width: 375px) {
+    .tournament_Image{
+       zoom: 100%;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 770px) {
+    .chess{
+        margin-top: 80px;
+    }
+    .supportTournament{
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .supportTournament_text{
+        max-width: 764px;
+    }
+    /* .supportTournament_text>span{
+        font-size: 36px;
+        line-height: 49px;
+    } */
+    .supportTournament_image{
+        min-width: 354px;
+        max-width: 354px;
+        height: 250px;
+    }
+
+    .tournament{
+        flex-direction: row;
+        gap: 36px;
+    }
+    .tournament_Image{
+        width: 100%;
+        height: auto;
+        zoom: 100%;
+    }
+    .tournamentInfo_title{
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .tournamentInfo{
+        margin-top: 31px;
+    }
+    .tournamentInfo_detailsList{
+        margin-top: 59px;
+        gap: 0;
+    }
+    .tournamentInfo_detailsList_element{
+        border-bottom: 3px solid #D0D0D0;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+    .tournamentInfo_detailsList_title{
+        border-right: 3px solid #D0D0D0;
+        min-width: 50%;
+        width: min-content;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .tournamentInfo_detailsList_element:first-child .tournamentInfo_detailsList_title{
+        padding-top: 0;
+    }
+    .tournamentInfo_detailsList_element:last-child .tournamentInfo_detailsList_title{
+        padding-bottom: 0;
+    }
+    .tournamentInfo_detailsList_element:last-child .tournamentInfo_detailsList_sub{
+        align-self: end;
+    }
+    .tournamentInfo_detailsList_element:first-child .tournamentInfo_detailsList_sub {
+        align-self: start;
+    }
+    .tournamentInfo_detailsList_sub{
+        padding-left: 3px;
+        align-self: center;
+    }
+    .tournamentInfo_links{
+        margin-top: 47px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .supportTournament_image{
+        min-width: 394px;
+        max-width: 394px;
+        height: 250px;
+    }
+    .tournament_Image{
+        width: 100%;
+        height: auto;
+        zoom: 141%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .tournament_Image{
+        width: 100%;
+        height: auto;
+        zoom: 141%;
+    }
+    .tournamentInfo_detailsList_title{
+        min-width: 307px;
+    }
+}

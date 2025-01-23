@@ -1,0 +1,41 @@
+.logo{
+    display: flex;
+
+    background-image:   url('../../assets/images/logo.svg'), 
+                        url('../../assets/images/logo.svg'),
+                        url('../../assets/images/logo.svg'),
+                        url('../../assets/images/logo.svg');
+    background-repeat:  no-repeat, 
+                        no-repeat,
+                        no-repeat,
+                        no-repeat;
+    background-position: 0px 2px, 
+                        20px 2px,
+                        40px 2px,
+                        60px 2px;
+
+    font-family: 'Golos700';
+    font-style: normal;
+    font-size: 14.4176px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #595653;
+    padding-left: 86px;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 770px) {
+    .logo{
+        background-size: 21.65px 31.18px, 21.65px 31.18px, 21.65px 31.18px, 21.65px 31.18px;
+        background-position: -1px 2px, 
+                            23px 2px,
+                            45px 2px,
+                            68px 2px;
+
+
+        font-size: 16.6513px;
+        line-height: 18px;
+        padding-left: 98px;
+    }
+}

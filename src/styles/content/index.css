@@ -1,0 +1,21 @@
+@import url('chess.css');
+@import url('vasyukovStages.css');
+@import url('participants.css');
+
+
+
+/* Mobile */
+.content{
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 770px) {
+    .content{
+        max-width: 1366px;
+        padding: 0 72px;
+        margin: 0 auto;
+    }
+}

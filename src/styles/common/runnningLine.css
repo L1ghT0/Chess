@@ -1,0 +1,65 @@
+.runningLine{
+    background-color: #F54932;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    padding: 10px 12px;
+    overflow: hidden;
+}
+.runningLine_container{
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 2312px;
+}
+.marquee{
+    font-family: 'Merriweather400';
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #FFF;
+    animation: marquee 20s linear infinite;
+}
+.ellipse{
+    padding: 0 9px 0 12px;
+    height: 9px;
+}
+.ellipse::before{
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+@media screen and (min-width: 770px) {
+    .runningLine{
+        padding: 18px 12px;
+    }
+    .marquee{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .ellipse{
+        height: 6px;
+    }
+    .ellipse::before{
+        transform: translate(0, -100%);
+    }
+}
+
+@keyframes marquee {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-100%);
+}
+}

@@ -1,0 +1,82 @@
+@import url("./common/index.css");
+@import url("header.css");
+@import url('content/index.css');
+@import url('footer.css');
+
+@font-face {
+    font-family: 'Golos700';
+    src: url('../assets/fonts/Golos_Text/static/GolosText-Bold.ttf');
+}
+@font-face {
+    font-family: 'Golos600';
+    src: url('../assets/fonts/Golos_Text/static/GolosText-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Golos500';
+    src: url('../assets/fonts/Golos_Text/static/GolosText-Medium.ttf');
+}
+@font-face {
+    font-family: 'Golos400';
+    src: url('../assets/fonts/Golos_Text/static/GolosText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather400';
+    src: url('../assets/fonts/Merriweather/Merriweather-Regular.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 0;
+}
+li{
+    list-style-type:none
+}
+a{
+    text-decoration: none;
+}
+input, button{
+    border: none;
+}
+
+.mobile_inline{
+    display: inline;
+}
+.mobile_block{
+    display: block;
+}
+
+.pc_block,
+.pc_inline{
+    display: none;
+}
+.pc_flex{
+    display: none;
+}
+body{
+    min-width: 300px;
+}
+
+@media screen and (min-width: 770px) {
+    .pc_block{
+        display: block;
+    }
+    .pc_inline{
+        display: inline;
+    }
+    .mobile_inline,
+    .mobile_block{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .pc_flex{
+        display: flex;
+    }
+}

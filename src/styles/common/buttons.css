@@ -1,0 +1,61 @@
+.button_darktheme,
+.button_lighttheme,
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0px 13px 0px;
+    border-radius: 66px;
+    width: 100%;
+    font-family: 'Golos500';
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    border: 0px;
+}
+
+.button_lighttheme{
+    background-color: #FFF;
+    border: 0px;
+}
+.button_darktheme{
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+.button_darktheme:hover{
+    background-color: #FBCE51;
+    color: #000;
+}
+
+.button_lighttheme:hover{
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+.button_supplement_small{
+    font-family: 'Golos500';
+    font-size: 16px;
+    line-height: 10px;
+    color: #3057A2;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    background-color: #FFF;
+}
+.button_supplement_small:hover{
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: #3057A2;
+}
+
+@media screen and (min-width: 770px) {
+    .button_lighttheme{
+        background-color:rgba(255, 255, 255, 0.0);
+        border: 2px solid #1F1F1F;
+    }
+    .button{
+        padding: 13px 49px;
+    }
+}
+

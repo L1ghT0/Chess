@@ -1,0 +1,212 @@
+.vasyukovStages{
+    margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.vasyukovStages_intro{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vasyukovStages_listContaienr{
+    margin-top: 149px;
+    background-image: url('../../assets/images/StampPaper.png'), url('../../assets/images/overlay.png');
+    overflow: hidden;
+}
+.vasyukovStages_list{
+    display: flex;
+    list-style-type: none;
+    counter-reset: num;
+    position: relative;
+    left: 0;
+}
+
+.vasyukovStages_card{
+    min-width: 100%;
+    height: 300px;
+    padding-top: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    word-break: break-word;
+}
+
+.vasyukovStages_card_element{
+    width: 100%;
+    font-family: 'Golos500';
+    font-size: 18px;
+    line-height: 22px;
+    color: #313131;
+    padding-left: 72px;
+    position: relative;
+    max-width: 239px;
+    box-sizing: content-box;
+    counter-increment: num;  
+}
+.vasyukovStages_card_element::before{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    content: counter(num) "";
+    color: #313131;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 20px;
+    line-height: 36px;
+}
+.pagination_container{
+    margin-top: 28px;
+}
+
+.vasyukovStages_planeImage{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/plane.png');
+    background-repeat: no-repeat;
+    rotate: -3deg;
+    zoom: 84%;
+}
+@media screen and (min-width: 440px) {
+    .vasyukovStages_planeImage{
+        top: 25%;
+    }
+}
+@media screen and (min-width: 509px) {
+    .vasyukovStages_planeImage{
+        top: 21%;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 705px) {
+    .vasyukovStages_planeImage{
+        top: 15%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 770px) {
+    .vasyukovStages{
+        margin-top: 200px;
+        overflow: visible;
+    }
+    .vasyukovStages_intro{
+        display: inline-block;
+        max-width: 806px;
+    }
+    .vasyukovStages_intro .link{
+        max-width: 280px;
+        display: inline-block;
+        padding-left: 7px;
+    }
+    .vasyukovStages_listContaienr{
+        margin-top: 54px;
+        background-image: none;
+    }
+    .vasyukovStages_list{
+        display: grid;
+        grid-template-areas:    "one    two     three"
+                                "four   five    three"
+                                "six    seven   seven";
+        gap: 20px;
+        grid-auto-rows: minmax(112px, auto);
+        left: 0;
+    }
+    .vasyukovStages_listContaienr .gridBox_one{
+        grid-area: one;
+    }
+    .vasyukovStages_listContaienr .gridBox_two{
+        grid-area: two;
+    }
+    .vasyukovStages_listContaienr .gridBox_three{
+        grid-area: three;
+    }
+    .vasyukovStages_listContaienr .gridBox_four{
+        grid-area: four;
+    }
+    .vasyukovStages_listContaienr .gridBox_five{
+        grid-area: five;
+    }
+    .vasyukovStages_listContaienr .gridBox_six{
+        grid-area: six;
+    }
+    .vasyukovStages_listContaienr .gridBox_seven{
+        grid-area: seven;
+        max-width: 60%;
+    }
+    .vasyukovStages_listContaienr .gridBox_seven .vasyukovStages_card_element{
+        max-width: 60%;
+    }
+    .vasyukovStages_card{
+        display: flex;
+        height: auto;
+        padding-top: 20px;
+        background-image: url('../../assets/images/StampPaper.png'), url('../../assets/images/overlay.png');
+    }
+    .vasyukovStages_card_element{
+        max-width: 300px;
+        font-size: 20px;
+        line-height: 24px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        padding-right: 20px;
+    }
+    .gridBox_seven .vasyukovStages_card_element{
+        max-width: 446px;
+        padding-bottom: 20px;
+    }
+    .pagination_container{
+        display: none;
+    }
+    .vasyukovStages_planeImage{
+        background-position: 100% 100%;
+        display: none;
+    }
+}
+@media screen and (min-width: 840px) {
+    .vasyukovStages_planeImage{
+        top: -12.3%;
+        left: 8.15%;
+        rotate: 0deg;
+        zoom: 85%;
+        display: block;
+    }
+}
+@media screen and (min-width: 960px) {
+    .vasyukovStages_planeImage{
+        top: -6.3%;
+        left: 8.15%;
+        rotate: 0deg;
+        zoom: 85%;
+        display: block;
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    .vasyukovStages_card_element{
+        word-wrap: normal;
+    }
+    .vasyukovStages_planeImage{
+        top: -13.3%;
+        left: 5.15%;
+        rotate: 0deg;
+        zoom: 90%;
+        display: block;
+
+    }
+}
+@media screen and (min-width: 1360px) {
+    .vasyukovStages_card_element{
+        box-sizing: content-box;
+    }
+    .vasyukovStages_listContaienr .gridBox_seven .vasyukovStages_card_element{
+        max-width: 446px;
+    }
+}

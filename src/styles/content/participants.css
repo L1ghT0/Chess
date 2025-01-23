@@ -1,0 +1,143 @@
+.participants{
+    margin-top: 120px;
+    padding-bottom: 100px;
+}
+.participants_listContainer{
+    margin-top: 40px;
+    overflow: hidden;
+    
+}
+.participants_list{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateX(-100%);
+}
+.participants_listElement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 28px;
+    min-width: 100%;
+}
+
+.participants_avatarContainer{
+    width: 244px;
+    height: 244px;
+    border-radius: 100%;
+    background-image: url('../../assets/images/tournament/CooperUnionStampPaper.png');
+    background-color: #424241;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: -2px -15px;
+}
+
+.participants_avatar{
+    position: relative;
+    top: 16px;
+    left: 2px;
+    max-width: 239px;
+    max-height: 227px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.participants_ditails{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.participants_ditails_name{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Golos600';
+    font-size: 24px;
+    line-height: 29px;
+    color: #313131;
+}
+.participants_ditails_title{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Golos400';
+    font-size: 20px;
+    line-height: 24px;
+    color: #313131;
+    opacity: 0.6;
+}
+
+.participants_supplement{
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 20px;
+}
+.participants_pagination{
+    margin-top: 40px;
+    align-items: center;
+    gap: 14px;
+}
+@media screen and (min-width: 770px) {
+    .participants_titleContainer{
+        display: flex;
+        align-items: center;
+    }
+    .participants_titleContainer .pagination__numbers{
+        padding: 0 16.5px 0 14px;
+    }
+    .participants_titleContainer .pagination{
+        margin: 0 0 0 auto;
+    }
+    .participants_listElement{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 28px;
+        min-width: 32.4%;
+        max-width: 394px;
+    }
+    .participants_avatar {
+        top: 15px;
+        left: 3px;
+        max-width: 195px;
+        max-height: 185px;
+    }
+    .participants_avatarContainer{
+        width: 200px;
+        height: 200px;
+    }
+    .participants_list{
+        gap: 12px;
+    }
+    .participants_ditails{
+        gap: 7px;
+    }
+}
+@media screen and (min-width: 1180px) {
+    .participants{
+        margin-top: 200px;
+        padding-bottom: 140px;
+    }
+    .participants_listContainer {
+        margin-top: 60px;
+    }
+    .participants_list{
+        gap: 17.7px;
+        transform: translateX(-101.5%);
+    }
+    .participants_avatarContainer{
+        width: 320px;
+        height: 320px;
+    }
+    .participants_avatar {
+        top: 21px;
+        left: 2px;
+        max-width: 318px;
+        max-height: 299px;
+    }
+    .participants_supplement{
+        margin-top: 18px;
+    }
+}
